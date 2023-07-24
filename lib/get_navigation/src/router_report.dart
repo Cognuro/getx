@@ -55,6 +55,7 @@ class RouterReportManager<T> {
       ambiguate(WidgetsBinding.instance)!.addPostFrameCallback((_) {
         _removeDependencyByRoute(disposed);
       });
+      WidgetsBinding.instance.ensureVisualUpdate();
     }
   }
 
